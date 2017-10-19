@@ -28,12 +28,6 @@ void print_student(Mode m, Student s) {
   }
 }
 
-/*
-	argv[1] will be the Mode integer
-	argv[2...] will be student info in the form [first_name, last_name, major, year]
-	the fields are all strings (char[])
-	except year is a number (int)
-*/
 int main(int argc, char *argv[]) {
 	
   for (int i = 2; i<argc; i+=4){
@@ -47,14 +41,3 @@ int main(int argc, char *argv[]) {
   return 0;
 }
 
-/* TODO: parse argv to populate student structs 
-  Student s1, s2;
-  s1.first_name = "Julia";
-  s1.last_name = "A";
-  s2.first_name = "Peter";
-  s2.last_name = "Cooper";
-  
-   print_student(argv [1], s1);
-  print_student(NAME_ONLY, s2);
-  return 0;
-  */
